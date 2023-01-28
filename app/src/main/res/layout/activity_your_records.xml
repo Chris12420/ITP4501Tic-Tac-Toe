@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YourRecords"
+    android:orientation="vertical"
+    android:background="@drawable/bg_your_records">
+
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000FFD9"
+        android:text="Your Records"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+
+    <Button
+        android:id="@+id/btnShowChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#1F000000"
+        android:onClick="btnClickShowChart"
+        android:text="SHOW IN PIE CHART"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:icon="@drawable/ic_baseline_bar_chart_24"
+        app:iconPadding="-50dp"
+        app:iconSize="50dp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btnShowChart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="btnClickShowChart"-->
+<!--        android:text="SHOW IN PIE CHART" />-->
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Play">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg_play" />
+
+    <TextView
+        android:id="@+id/You"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="72dp"
+        android:text="You: O"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="16dp"
+        android:text="CPU: X"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/VS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:shadowColor="?attr/colorControlHighlight"
+        android:text="VS"
+        android:textAlignment="center"
+        android:textColor="?attr/colorControlNormal"
+        android:textIsSelectable="false"
+        android:textSize="60dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/You" />
+
+    <TextView
+        android:id="@+id/timeRecord"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlay1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VS" />
+
+
+    <Button
+        android:id="@+id/btnPlay0"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VS" />
+
+    <Button
+        android:id="@+id/btnPlay1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="3dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btnPlay0"
+        app:layout_constraintTop_toTopOf="@+id/btnPlay0" />
+
+    <Button
+        android:id="@+id/btnPlay2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="3dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btnPlay1"
+        app:layout_constraintTop_toTopOf="@+id/btnPlay1" />
+
+    <Button
+        android:id="@+id/btnPlay3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginTop="-9dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay0" />
+
+    <Button
+        android:id="@+id/btnPlay4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="-9dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/btnPlay1"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay1" />
+
+    <Button
+        android:id="@+id/btnPlay5"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="-9dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/btnPlay2"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay2" />
+
+    <Button
+        android:id="@+id/btnPlay6"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="-9dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/btnPlay0"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay3" />
+
+    <Button
+        android:id="@+id/btnPlay7"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="-9dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/btnPlay1"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay4" />
+
+    <Button
+        android:id="@+id/btnPlay8"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="-9dp"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/btnPlay2"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay5" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="382dp"
+        android:layout_height="51dp"
+        android:backgroundTint="?attr/colorControlNormal"
+        android:hapticFeedbackEnabled="false"
+        android:text="Continue"
+        android:theme="@style/Button.White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

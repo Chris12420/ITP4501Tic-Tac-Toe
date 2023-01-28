@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="ranking_code_url">http://10.0.2.2/ranking_api.php</string>
+</resources>

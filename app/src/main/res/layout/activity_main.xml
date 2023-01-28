@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/f640fdc882b5dbf953d5eaac6c11d0cb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:background="#70ffffff"
+        android:orientation="vertical"
+        android:padding="24dp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="24dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Tic-Tac-Toe"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#1F000000"
+            android:onClick="ClickPlayHandler"
+            android:text="Play"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_media_play"
+            app:iconPadding="-50dp"
+            app:iconSize="50dp" />
+
+        <Button
+            android:id="@+id/btnGameRanking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#1F000000"
+            android:onClick="ClickRankHandler"
+            android:text="GAME RANKING"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_myplaces"
+            app:iconPadding="-50dp"
+            app:iconSize="50dp" />
+
+        <Button
+            android:id="@+id/btnYourRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?attr/colorControlHighlight"
+            android:onClick="ClickYourRecords"
+            android:text="YOUR RECORDS"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_recent_history"
+            app:iconPadding="-50dp"
+            app:iconSize="50dp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?attr/colorControlHighlight"
+            android:onClick="ClickClose"
+            android:text="CLOSE"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel"
+            app:iconPadding="-50dp"
+            app:iconSize="50dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
